@@ -4,7 +4,7 @@
 
 - [x] Implemented using .Net Core 5.0 Web Api.
 
-- [x] Follows clean code architecture. 
+- [x] Follows clean code architecture with CQRS pattern and Mediator design pattern. 
 
 - [x] Secured by JWT token based authentication.
   
