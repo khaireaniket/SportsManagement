@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SportsManagement.API</name>
+    </assembly>
+    <members>
+        <member name="T:SportsManagement.API.Controllers.PlayersController">
+            <summary>
+            Controller to delegate calls to Player handlers
+            </summary>
+        </member>
+        <member name="M:SportsManagement.API.Controllers.PlayersController.Get">
+            <summary>
+            Endpoint used to fetch all the players
+            </summary>
+            <returns>List of players</returns>
+        </member>
+        <member name="M:SportsManagement.API.Controllers.PlayersController.Get(SportsManagement.Application.Players.Queries.GetPlayerById.GetPlayerByIdQuery)">
+            <summary>
+            Endpoint used to fetch a player by playerId
+            </summary>
+            <param name="query">Id</param>
+            <returns>Player details</returns>
+        </member>
+        <member name="M:SportsManagement.API.Controllers.PlayersController.Post(SportsManagement.Application.Players.Commands.CreatePlayer.CreatePlayerCommand)">
+            <summary>
+            Endpoint used to add a player
+            </summary>
+            <param name="command">Player details</param>
+            <returns>Player Id</returns>
+        </member>
+        <member name="M:SportsManagement.API.Controllers.PlayersController.Put(SportsManagement.Application.Players.Commands.UpdatePlayer.UpdatePlayerCommand)">
+            <summary>
+            Endpoint used to update an existing player
+            </summary>
+            <param name="command">Player details</param>
+            <returns>Player Id</returns>
+        </member>
+        <member name="M:SportsManagement.API.Controllers.PlayersController.Delete(SportsManagement.Application.Players.Commands.DeletePlayer.DeletePlayerCommand)">
+            <summary>
+            Endpoint used to remove a player
+            </summary>
+            <param name="command">Player details</param>
+            <returns>No data</returns>
+        </member>
+        <member name="T:SportsManagement.API.Controllers.TeamsController">
+            <summary>
+            Controller to delegate calls to Team handlers
+            </summary>
+        </member>
+        <member name="M:SportsManagement.API.Controllers.TeamsController.GetFixtures(SportsManagement.Application.Teams.Queries.GetFixtures.GetFixturesQuery)">
+            <summary>
+            Endpoint used to fetch upcoming/played fixtures
+            </summary>
+            <param name="query">Enum values: Upcoming, Played, Postponed, Cancelled</param>
+            <returns>List of fixtures</returns>
+        </member>
+    </members>
+</doc>
